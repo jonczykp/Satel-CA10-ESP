@@ -17,8 +17,7 @@ external_components:
  #     type: local
   #    path: components
     # or from git:
- - source: github://jonczykp/Satel-CA10-ESP
-      path: esphome/components
+ - source: github://jonczykp/Satel-CA10-ESP/esphome/components
 
 satel_ca10:
   id: satel
