@@ -22,8 +22,8 @@ external_components:
 
 satel_ca10:
   id: satel
-  clk_pin: D1
-  data_pin: D5
+  clk_pin: GPIO5    #D1 SCL
+  data_pin: GPIO14  #D5 SCLK
 
 binary_sensor:
   - platform: satel_ca10
@@ -34,6 +34,32 @@ binary_sensor:
     led: led2
     name: "Satel LED02"
     device_class: motion
+  - platform: satel_ca10
+    led: led3
+    name: "Satel LED03"
+    device_class: motion
+  - platform: satel_ca10
+    led: led4
+    name: "Satel LED04"
+    device_class: motion
+  - platform: satel_ca10
+    led: led5
+    name: "Satel LED05"
+    device_class: motion
+  - platform: satel_ca10
+    led: led6
+    name: "Satel LED06"
+    device_class: motion
+  - platform: satel_ca10
+    led: led7
+    name: "Satel LED07"
+    device_class: motion
+  - platform: satel_ca10
+    led: led8
+    name: "Satel LED08"
+    device_class: motion
+
+
   # led3 ... led8 work the same way
   - platform: satel_ca10
     led: warning
